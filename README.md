@@ -1,2 +1,16 @@
 # Police-Brutality-Bot
-An access point and description of the now offline Police Brutality Twitter bot
+
+![logo](/logo.png)
+
+This repository acts as an access point for the data collected by the Police Brutality Twitter bot [@BotBrutality](x.com/botbrutality) that I created during the Summer of 2020. This was the first project I ever made public, my first attempt at developing automated processes, my first attempt at using the now-defunct Twitter API, and my first hacktivist project. While the world around me felt like it was on fire, I was stranded on a farm without a car to go help in some compacity, with an emotional convictive need to help with what talents I had.
+
+Three months into its deployment the bot was banned from using the API, but I was never told as to why, and the posts made on the account left to the public. Those posts, bar the pinned link to my publicly accessible database, were then deleted sometime following Elon Musks acquisition of the platform.
+# Purpose
+I was inspired by the [dataset](https://docs.google.com/spreadsheets/u/1/d/1YmZeSxpz52qT-10tkCjWOwOGkQqle7Wd1P7ZM1wMW0E/htmlview?pru=AAABcql6DI8*mIHYeMnoj9XWUp3Svb_KZA#) created by lawyer [T. Gregg Doucette](https://x.com/greg_doucette?lang=en) and what I thought could give me an advantage at the time was how accumulating data in an automated manner could outperform manual gathering methods. While I inched my way towards some form of full automation, in execution I spent a lot of time manually validating the gathered data prior to publishing, with all tweets validated by myself prior to sending out. I wanted this project to operate in full anonymity, with the intent to provide security for those sharing incidents online, such as to not be followed with harassment from people of differing political views, while also holding offending departments accountable.
+# Approach
+
+![sample](/sample.png)
+
+The code for this project is long gone but I can do my best to summarize my approach from memory. I pulled data from two sources: Greg's database and Twitter API queries. The terms used in the queries were based on common trends that I found in posts surrounding incidents of police brutality. I could target cities where protests were happening, specific departments, names, and common hashtags associated with shared media. This content could then be filtered to allow me to recieve new posts to prevent API bloat, as well as limit myself to posts containing some form of media. I would then store this data and its associated metadata into my dataset, which I figured Google sheets would both serve this purpose as well as allow non-software oriented people to read and understand the data. For a time I also downloaded the metadata and kept it stored on a cloud drive, but its been many years since I've accessed this information and the bot never caught on enough for me to develop a better means of distributing this information.
+
+All of the posts made on the account were written by me. My attempt was to automate this process via grouping the incidents into categories, determining the offending department, and using common hashtags associated with the incident. By the time they were posted, the post would have been validated by myself and its metadata backed up onto my cloud drive.
